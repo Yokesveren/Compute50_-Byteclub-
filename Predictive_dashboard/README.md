@@ -1,8 +1,91 @@
 # SevaSetu Predictive Dashboard
 
+[**Open the live dashboard ↗**](https://seva-village-health-twin.lovable.app/digital-twin) · [Screenshots](#website-gallery) · [Workflow](#how-the-dashboard-works) · [Run locally](#run-locally) · [Data & privacy](#geography-and-data)
+
 A public-health decision-support prototype for **Gandhipuram and central Coimbatore, Tamil Nadu**. It combines real OpenStreetMap geography with deterministic, simulated disease signals to explore potential outbreaks and compare response plans.
 
 > **Simulated disease data on real geography. Decision-support prototype.** This is not a clinical system, a trained outbreak model, or a source of confirmed patient, population, facility-capacity or referral information.
+
+## Live deployment
+
+**Website:** [seva-village-health-twin.lovable.app](https://seva-village-health-twin.lovable.app)  
+**Dashboard:** [Open `/digital-twin`](https://seva-village-health-twin.lovable.app/digital-twin)
+
+The public deployment is accessible without a Lovable account. The screenshots below were captured from this live website.
+
+## Website gallery
+
+### Real Coimbatore geography, simulated early warnings
+
+[![Live Coimbatore dashboard showing 3D buildings, aggregate risk cells, explainable drivers and timeline](docs/images/dashboard.png)](https://seva-village-health-twin.lovable.app/digital-twin)
+
+*Click the image to explore the live dashboard. The map shows real OpenStreetMap footprints; risk colours belong to aggregate cells, not individual buildings.*
+
+<details>
+<summary><strong>View the response-planning comparison</strong></summary>
+
+![Response simulator with recommended interventions and baseline-versus-response forecast](docs/images/response-planning.png)
+
+In the illustrated dengue scenario, the recommended set changes the **simulated peak from 65 to 34 cases/day** and shifts the peak from **day 20 to day 22**. These are prototype estimates, not validated treatment or outbreak outcomes.
+
+</details>
+
+<details>
+<summary><strong>View the Tamil dashboard</strong></summary>
+
+![Coimbatore dashboard with Tamil controls, area summaries and forecast timeline](docs/images/tamil-dashboard.png)
+
+The language toggle switches the dashboard between English and Tamil.
+
+</details>
+
+## How the dashboard works
+
+### Explore → understand → compare → recommend review
+
+```mermaid
+flowchart TD
+    A[Open the Coimbatore digital twin] --> B[Choose a disease scenario]
+    B --> C[Explore aggregate map layers and timeline]
+    C --> D[Inspect drivers, alerts and area summaries]
+    D --> E[Review forecast uncertainty and capacity demand]
+    E --> F[Test a response]
+    F --> G[Adjust interventions and resources]
+    G --> H[Compare baseline and response forecasts]
+    H --> I[Recommend human review]
+    I --> J[Government officials make decisions]
+```
+
+### Real geography + simulated signals
+
+```mermaid
+flowchart LR
+    A[Bundled real OpenStreetMap layers] --> B[Browser geography worker]
+    B --> C[Source-versioned IndexedDB cache]
+    B --> D[H3 cells with at least 5 buildings]
+    C --> D
+    E[Deterministic simulated disease signals] --> F[Pure forecast and intervention math]
+    G[Scenario, timeline and intervention choices] --> F
+    D --> H[3D aggregate risk map]
+    F --> H
+    F --> I[Forecast ranges and capacity comparison]
+    H --> J[Human review]
+    I --> J
+```
+
+<details>
+<summary><strong>Try the core demo workflow</strong></summary>
+
+1. Open the live dashboard and select **Dengue**.
+2. Move the timeline from historical signals into the forecast period.
+3. Inspect a contributing driver or an aggregate zone.
+4. Select **Test a response**, then **Apply recommended set**.
+5. Compare the projected peak, uncertainty range and bed-demand charts.
+6. Switch to Tamil or another disease scenario to explore the same planning workflow.
+
+All displayed health outcomes remain simulated; recommendations require human review.
+
+</details>
 
 ## Dashboard capabilities
 
