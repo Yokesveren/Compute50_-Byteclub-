@@ -184,8 +184,8 @@ export default function Dashboard({ onNavigate }: DashboardProps) {
         <PageBand
           tone="ward"
           title="PHC Command"
-          subtitle={`Sahayadri Taluk · ${today}`}
-          lead={`Administrative console · ${user?.name || "PHC Administrator"} · Karnataka Health Mission`}
+          subtitle={`Gandhipuram Taluk, Coimbatore · ${today}`}
+          lead={`Administrative console · ${user?.name || "PHC Administrator"} · Tamil Nadu Health Mission`}
           badge={
             <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-[#0b2a3c] text-[#9fe5cf] text-[10.5px] font-black uppercase tracking-wider">
               <Radio size={10} className="animate-pulse" />

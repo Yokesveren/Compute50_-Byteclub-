@@ -207,12 +207,12 @@ export default function Header({ onNavigate }: HeaderProps) {
         {/* PHC identity — center */}
         <div className="flex-1 flex flex-col items-center gap-0.5">
           <div className="font-display font-bold text-[#0b2a3c] text-sm leading-none tracking-tight">
-            Primary Health Centre · ಪ್ರಾಥಮಿಕ ಆರೋಗ್ಯ ಕೇಂದ್ರ
+            Primary Health Centre · ஆரம்ப சுகாதார நிலையம்
           </div>
           <div className="text-[11px] text-[#56636b] font-sans leading-none">
-            Sahayadri Taluk &nbsp;·&nbsp; Karnataka &nbsp;·&nbsp; NHM
+            Gandhipuram Taluk &nbsp;·&nbsp; Coimbatore, Tamil Nadu &nbsp;·&nbsp; NHM
             &nbsp;&nbsp;
-            <span className="font-mono text-[#8a9aa6] text-[10px]">HMIS: KA-SAHA-PHC-001</span>
+            <span className="font-mono text-[#8a9aa6] text-[10px]">HMIS: TN-CBE-PHC-001</span>
           </div>
         </div>
 

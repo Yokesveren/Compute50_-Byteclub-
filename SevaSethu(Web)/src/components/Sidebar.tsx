@@ -192,7 +192,7 @@ export default function Sidebar({ activeView, onNavigate, role }: SidebarProps) 
               SeVaSetu
             </span>
             <span className="text-[10px] text-[#7a98a8] leading-none tracking-wide">
-              ಸೇವಾಸೇತು · PHC Portal
+              சேவாசேது · PHC Portal
             </span>
           </div>
         </div>
@@ -301,10 +301,10 @@ export default function Sidebar({ activeView, onNavigate, role }: SidebarProps) 
             </motion.button>
           </div>
 
-          {/* NHM Karnataka branding */}
+          {/* NHM Tamil Nadu branding */}
           <div className="mt-2.5 px-1">
             <p className="text-[9px] text-[#56636b] leading-tight">
-              National Health Mission · Karnataka
+              National Health Mission · Tamil Nadu
             </p>
             <p className="text-[9px] font-mono text-emerald-500 mt-0.5">
               ABDM · HMIS · FHIR R4 Compliant
