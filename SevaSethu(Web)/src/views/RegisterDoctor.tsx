@@ -4,6 +4,7 @@ import { Stethoscope, ArrowLeft, CheckCircle2, User, Mail, Phone, Award, Lock } 
 import { useAuth } from "../auth/AuthContext";
 import { ViewType } from "../types";
 import { NationalEmblem, TricolorRibbon, GovTopBar, GovFooterBar } from "../components/GovEmblem";
+import sevaSetuLogo from "../assets/sevasetu-logo.png";
 
 export default function RegisterDoctor({ onNavigate }: { onNavigate: (view: ViewType) => void }) {
   const { addDoctorRegistrationRequest } = useAuth();
@@ -31,7 +32,7 @@ export default function RegisterDoctor({ onNavigate }: { onNavigate: (view: View
             <div className="flex items-center justify-center gap-3 mb-2">
               <NationalEmblem className="h-11 w-auto text-slate-800" />
               <div className="h-8 w-px bg-slate-200" />
-              <img src="/sevasetu-logo.png" alt="SeVaSetu Logo" className="h-9 w-auto object-contain" />
+              <img src={sevaSetuLogo} alt="SeVaSetu Logo" className="h-9 w-auto object-contain" />
             </div>
             <h1 className="font-bold text-lg text-slate-900">Medical Officer & Doctor Registration</h1>
             <p className="text-xs text-slate-500 mt-0.5">National Health Mission · Ministry of Health & Family Welfare</p>

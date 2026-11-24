@@ -58,13 +58,14 @@ const NOTIFICATIONS = [
 ];
 
 import { NationalEmblem, TricolorRibbon } from "./GovEmblem";
+import sevaSetuLogo from "../assets/sevasetu-logo.png";
 
 const PHCLogo = () => (
   <div className="flex items-center gap-2.5">
     <NationalEmblem className="h-8 w-auto text-slate-700 flex-shrink-0" showMotto={false} />
     <div className="h-7 w-px bg-slate-300" />
     <img
-      src="/sevasetu-logo.png"
+      src={sevaSetuLogo}
       alt="SeVaSetu Logo"
       className="h-7 w-auto max-w-[130px] object-contain"
     />

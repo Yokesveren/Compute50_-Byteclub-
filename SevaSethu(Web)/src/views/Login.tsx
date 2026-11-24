@@ -26,6 +26,7 @@ import {
   GovFooterBar,
   AshokaChakra,
 } from "../components/GovEmblem";
+import sevaSetuLogo from "../assets/sevasetu-logo.png";
 
 type PortalType = "selection" | "admin" | "doctor";
 type AuthMode = "login" | "register";
@@ -164,7 +165,7 @@ export default function Login({
               <NationalEmblem className="h-14 w-auto text-slate-800 flex-shrink-0" />
               <div className="h-10 w-px bg-slate-200" />
               <img
-                src="/sevasetu-logo.png"
+                src={sevaSetuLogo}
                 alt="SeVaSetu Official Logo"
                 className="h-11 w-auto object-contain"
               />

@@ -24,6 +24,7 @@ import {
   GovFooterBar,
   AshokaChakra,
 } from "./GovEmblem";
+import sevaSetuLogo from "../assets/sevasetu-logo.png";
 
 interface WelcomeScreenProps {
   onComplete: () => void;
@@ -82,7 +83,7 @@ export default function WelcomeScreen({ onComplete }: WelcomeScreenProps) {
             <div className="h-10 w-px bg-slate-300 hidden sm:block" />
             <div className="flex items-center gap-2">
               <img
-                src="/sevasetu-logo.png"
+                src={sevaSetuLogo}
                 alt="SeVaSetu Official Logo"
                 className="h-10 md:h-12 w-auto object-contain drop-shadow-xs"
               />
