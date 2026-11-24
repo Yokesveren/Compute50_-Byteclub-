@@ -1,0 +1,9 @@
+{
+  "name": "sevasethu-web-root",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "install": "npm --prefix \"SevaSethu(Web)\" install",
+    "build": "npm --prefix \"SevaSethu(Web)\" run build"
+  }
+}

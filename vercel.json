@@ -1,0 +1,11 @@
+{
+  "buildCommand": "cd \"SevaSethu(Web)\" && npm install && npm run build",
+  "outputDirectory": "SevaSethu(Web)/dist",
+  "framework": "vite",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
